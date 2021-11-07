@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layouts</title>
+    <link rel="stylesheet" href="main.css">
+    
+</head>
+<body>
+   
+    <div class="container" id="teil__eins">
+    <h1>Layouts und Gliederungen</h1>
+    <p>Ihr kennt bereits die Gliederung mit Hilfe von Paragraphen</p>
+    <p>Außerdem kennt ihr schon den <br><strong>break Tag</strong></p>
+
+    <p>Schauen wir uns zunächst an, wie die Objekte in HTML normalerweise angezeigt werden:</p>
+
+    <div class="kasten" id="eins">Hier ist ein sogenanntes "div"</div>
+    <div class="kasten" id="zwo">Hier ist ein weiteres "div"</div>
+
+    <p>Beide divs haben eine Breite und Höhe. Findest du den Unterschied?</p>
+</div>
+
+<div class="parallax" id="p1">?</div>
+
+<!-- Hier beginnt der zweite Teil -->
+
+<div class="container" id="teil__zwei">
+    <h1>Flexbox - ein zweidimensionales Kastensystem</h1>
+    <p>Die einfachste Art, um den Inhalt einer Seite eingiermaßen zu formatieren, ist die Flexbox. <br>
+    Hierbei wird die Möglichkeit genutzt, verschiedene Objekte ineinander zu verschachteln. Der Fachbegriff ist <br>
+<strong>Nesting</strong></p>
+<h3>1. Nesting</h3>
+<p>Besimmt schonmal passiert: du hast vergessen, einen Tag wieder zu schließen. <br>
+Eventuell wolltest du <h5>nur mal kurz eine Überschrift schreiben. Schon war der Text schief.</h5>
+Tatsächlich ist das die einfachste Form von "Nesting". Eigentlich spricht man erst davon, wenn ein Objekt einem andern bewusst untergeschoben wird. Ein Beispiel sind die beiden nächsten Divs</p>
+    <div class="kasten" id="box1">Ich bin eine einsame Box.</div>
+    <div class="kasten" id="box2">Ich bin das sogenannte <strong> parent element</strong>
+    <div class="kasten" id="box3">Ich bin das erste <strong>child element </strong></div>
+    <div class="kasten" id="box3">Ich bin das zweite <strong>child element</strong></div></div>
+
+<p>Sicher fällt dir direkt auf, was da passiert ist. Das parent Element ist also das, welches erst nach dem <br>
+    child Element wieder geschlossen wird. Alle child Elemente übernehmen übrigens die Eigenschaften des parent Elements. <br>
+    Man spricht auch - wie im echten Leben - von "erben" oder "inherit"
+</p>
+
+<p>Definiert man nun ein "container" Div als parent weiterer Elemente, so kann man über <br>
+die "Anzeigen" Eigenschaft dem Browser mitteilen, dass er den container als Layoutsystem nutzen soll. </p>
+
+</div>
+<div class="parallax" id="p2">!</div>
+
+<div class="container" id="teil__drei">
+<h3>2. Flexbox</h3>
+<p>Und schon geht es los. Hast du dich schon gewundert, warum in diesem Dokument alle bisherigen Elemente in der Mitte der Seite dargestellt werden? <br>
+Schon komisch, oder? Suche nach der Ursache. Ein kleiner Tip: da es <strong>alle</strong> Elemente betrifft, muss die Eigenschaft für ein sehr wichtiges Element festgelegt worden sein...</p>
+<br>
+
+<p>Jetzt schauen wir uns die Eigenschaften dieses Conatiners an.</p>
+
+
+<div id="flexbox">
+<div class="item">Ich bin eine einsame Box.</div>
+<div class="item">Ich bin die zweite Box</div>
+<div class="item">Ich bin die dritte Box</div>
+<div class="item">Ich bin die letzte Box</div>
+</div>
+
+<p>Megacool? Wenn du mehr wissen willst, schaue dir den folgenden Link genauer an:
+    <a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/"> Klick mich!</a>
+<br> Du solltest mit diesem Werkzeug und der Einteilung einer Seite durch Div-Elemente genug an der Hand haben, <br>
+um deiner Seite ein fetziges Layout zu geben. Behelfsmäßig baue auf deiner Seite die Flexbox ein!
+</p></div>
+<div class="container" id="teil__drei">
+    <h1>Und hier noch ein Codepen, der die verschiedenen Befehle veranschaulicht:</h1>
+    <p>Durch einen Klick auf "Add a child" kannst du Elemente hinzufügen. Beachte in diesem Fall den Pen an sich nicht weiter, probiere einfach die Funktionen von Flexbox aus.</p>
+<iframe class="flexframe" src="https://codepen.io/jstam/pen/XNMPxJ" frameborder="0"></iframe>
+</div>
+
+</body>
+
+</html>

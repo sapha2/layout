@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto:wght@500&display=swap');
+body{
+    font-size: x-large;
+    font-family: 'Roboto', sans-serif;}
+
+#teil__eins{
+    border: 5px solid teal;
+}
+
+.container{
+    background-image: linear-gradient(#8facce, teal);
+    gap: 2rem;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+
+.kasten{
+    color: white;
+    font-size: x-large;
+    border: 10px solid black;
+    text-align: center;
+}
+
+#eins {
+    width: 20%;
+    height: 20%;
+}
+
+#zwo {
+    width: 200px;
+    height: 150px;
+}
+
+/* Hier beginnt der zweite Teil */
+
+#teil__zwei{
+    background-image: linear-gradient(#b94637, orange);
+
+}
+#box2 {
+    border: 10px solid red;
+    height: 10vh;
+}
+
+#teil__drei {
+    display: block;
+}
+
+.flexbox1 {
+    /* Das ist der Standard für die Flexbox. Beachte die Anordnung auf der Seite. */
+    display: flex;
+}
+
+.item{
+    /* Da wir die Items gerne sehen möchten, bekommen sie eine feste Größe
+    und einen hübschen Rand! */
+
+    width: 10rem;
+    height: 10rem;
+    border: 5px dotted red;
+}
+
+#flexbox {
+    display: flex;
+/* Der Befehl für die Darstellung als Box. */
+
+/* Damit wir die Box vom Inhalt unterscheiden können eine blaue Linie */
+border: 5px double blue; 
+
+/* Hier wird der Inhalt angeordnet. Häufig will man ihn in der Mitte der jeweiligen Box haben.
+Kommentiere die nächste Zeile einfach aus, um deren Effekt zu sehen. */
+/* justify-content: center; */
+/* justify-content: space-between; */
+
+/* für noch mehr Zentrismus: kommentiere die folgenden zwei Zeilen aus.
+Beschreibe deren Effekt: */
+/* height: 40vh;
+align-items: center; */
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Das hier ist einfach nur, damit die Seite nicht so langweilig aussieht. Ignoriere das :) */
+
+.parallax {
+    min-height: 500px; 
+    font-size: 20rem;
+    text-align: center;
+    color: teal;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+}
+
+#p1 {
+    background-image: url("./img/parallax.jpg");
+}
+
+#p2 {
+    background-image: url("./img/parallax2.jpg");
+
+}
+
+.parallax:hover {
+    color: orangered
+}
+
+.flexframe {
+
+    width: 100%;
+    height: 100vh;
+}
